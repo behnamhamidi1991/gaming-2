@@ -1,0 +1,52 @@
+:root {
+  --primary-color: #1f2428;
+  --secondary-color: #ececec;
+  --post-color: #2f353d;
+  --btn-color: rgb(78, 83, 88);
+  --btn1: #3c62df;
+  --btn2: #8000ff;
+  --btn3: #ff007b;
+}
+
+header {
+  padding: 0 3%;
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  align-items: center;
+}
+
+/* LEFT - LOGO */
+.header-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-logo span {
+  font-weight: 900;
+  font-family: "Poppins";
+}
+
+.header-logo .header-logo-image {
+  width: 40px;
+  height: 30px;
+  color: var(--secondary-color);
+}
+
+/* MIDDLE - LINKS */
+
+.header-links {
+  display: flex;
+  gap: 60px;
+}
+
+.header-link-item {
+  color: var(--secondary-color);
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 700;
+}

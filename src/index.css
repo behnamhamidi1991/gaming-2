@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary-color: #1f2428;
+  --secondary-color: #ececec;
+  --post-color: #2f353d;
+  --btn-color: rgb(78, 83, 88);
+  --btn1: #3c62df;
+  --btn2: #8000ff;
+  --btn3: #ff007b;
+}
+
+.dark {
+  --primary-color: #1f2428;
+  --secondary-color: #fefefe;
+  --post-color: #2f353d;
+  --btn: #3c62df;
+  --btn-color: rgb(78, 83, 88);
+}
+
+.light {
+  --primary-color: #efefef;
+  --secondary-color: #1f2428;
+  --post-color: #ffffff;
+  --btn: #3c62df;
+  --btn-color: rgb(53, 56, 58);
+}
+
+.main {
+}
