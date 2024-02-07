@@ -1,7 +1,51 @@
-.parallax-bg {
-  background-image: url("./bg.jpg");
-  height: 100vh;
-  width: 200%;
-  background-size: cover;
-  background-repeat: no-repeat;
+:root {
+  --primary-color: #1f2428;
+  --secondary-color: #ececec;
+  --post-color: #2f353d;
+  --btn-color: rgb(78, 83, 88);
+  --btn1: #3c62df;
+  --btn2: #8000ff;
+  --btn3: #ff007b;
+}
+
+.top-slider {
+  position: relative;
+}
+
+.top-slider-image-container {
+  background-color: #000;
+}
+
+.image-slide {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  opacity: 0.4;
+}
+
+.top-slider-content {
+  position: absolute;
+  z-index: 1000;
+  color: #fff;
+  bottom: 30px;
+  left: 30px;
+  width: 800px;
+}
+
+.top-slider-content h1 {
+  font-size: 49px;
+  font-weight: 300;
+}
+
+.top-slider-content h2 {
+  font-size: 17px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.top-slider-content p {
+  font-size: 15px;
+  line-height: 1.7;
+  margin-top: 10px;
+  text-align: justify;
 }

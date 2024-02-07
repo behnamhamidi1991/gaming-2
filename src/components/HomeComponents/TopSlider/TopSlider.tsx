@@ -3,6 +3,8 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import { slides } from "../../../data";
+import "./topslider.css";
 
 const TopSlider = () => {
   return (
@@ -17,19 +19,21 @@ const TopSlider = () => {
         pagination={{
           clickable: true,
         }}
-        navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
+        {slides.map((slide) => (
+          <SwiperSlide key={slide.id} className="top-slider">
+            <div className="top-slider-image-container">
+              <img src={slide.image} alt="" className="image-slide" />
+            </div>
+            <div className="top-slider-content">
+              <h1>{slide.title}</h1>
+              <h2>{slide.subtitle}</h2>
+              <p>{slide.text}</p>
+            </div>
+          </SwiperSlide>
+        ))}
       </Swiper>
     </>
   );

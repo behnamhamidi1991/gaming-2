@@ -6,6 +6,7 @@
   list-style: none;
   text-decoration: none;
   scroll-behavior: smooth;
+  transition: all ease-in-out 0.1s;
 }
 
 :root {
@@ -32,7 +33,4 @@
   --post-color: #ffffff;
   --btn: #3c62df;
   --btn-color: rgb(53, 56, 58);
-}
-
-.main {
 }

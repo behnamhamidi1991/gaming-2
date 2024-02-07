@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom";
 import "./header.css";
 import { GiNinjaHeroicStance } from "react-icons/gi";
+import { FaUser } from "react-icons/fa";
+import { IoMdSunny } from "react-icons/io";
+import { FaMoon } from "react-icons/fa";
+import { FaShoppingCart } from "react-icons/fa";
 
 const Header = ({ darkTheme, theme }) => {
   return (
@@ -27,8 +31,17 @@ const Header = ({ darkTheme, theme }) => {
         </Link>
       </div>
       <div className="header-user">
-        <Link to="/dashboard">Dashboard</Link>
-        <button onClick={() => darkTheme(!theme)}>Light</button>
+        <Link to="/cart" className="cart-btn">
+          <FaShoppingCart className="cart" />
+          <span>0</span>
+        </Link>
+        <Link to="/dashboard" className="header-user-link">
+          <FaUser />
+          <p>Dashboard</p>
+        </Link>
+        <button onClick={() => darkTheme(!theme)} className="dark-light-btn">
+          {theme ? <IoMdSunny /> : <FaMoon />}
+        </button>
       </div>
     </header>
   );
