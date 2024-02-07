@@ -1,15 +1,8 @@
 import "./productions.css";
+import { productions } from "../../../data";
 
 const Productions = () => {
-  return (
-    <div>
-      <h1>Productions Page</h1>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti,
-        architecto?
-      </p>
-    </div>
-  );
+  return <div className="productions-container"></div>;
 };
 
 export default Productions;
