@@ -155,3 +155,20 @@
 .readmore-btn:hover {
   background-color: #1f2428;
 }
+
+@media screen and (max-width: 384px) {
+  .prodictions-container {
+    grid-template-columns: 1fr;
+  }
+
+  .price-box {
+    bottom: 230px;
+    left: 12px;
+  }
+}
+@media screen and (max-width: 336px) {
+  .price-box {
+    bottom: 250px;
+    left: 12px;
+  }
+}

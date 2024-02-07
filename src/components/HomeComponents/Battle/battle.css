@@ -1,6 +1,8 @@
 .battle {
   padding: 50px 7%;
   background-color: var(--primary-color);
+  color: var(--secondary-color);
+  width: 100%;
 }
 
 .battle .header {
@@ -27,4 +29,172 @@
   background-blend-mode: color;
   background-color: rgba(0, 0, 0, 0.5);
   position: relative;
+  color: #fff;
+}
+
+.battle-wrapper {
+  position: absolute;
+  bottom: 80px;
+  left: 30px;
+}
+
+.battle-wrapper h2 {
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+.battle-wrapper p {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.battle-container-info {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.info-item {
+  padding: 5px 8px;
+  border-radius: 3px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.info-item:first-child {
+  background-color: tomato;
+  text-decoration: line-through;
+}
+
+.info-item:nth-child(2) {
+  background-color: rgb(32, 139, 105);
+}
+.info-item:nth-child(3) {
+  background-color: rgb(32, 80, 139);
+}
+.info-item:last-child {
+  background-color: rgb(243, 49, 81);
+}
+
+.genre {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+  margin-bottom: 28px;
+  color: #d5d5d5;
+}
+
+.genre span {
+  padding: 8px 14px;
+  background-color: rgb(53, 53, 53);
+  font-weight: 800;
+  font-size: 13px;
+}
+
+.battle-container-users {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.user-status-wrapper {
+  position: relative;
+}
+
+.user-profile {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  background: linear-gradient(to top, orangered, red, orange) padding-box,
+    linear-gradient(to top, red, orangered, orange) border-box;
+}
+
+.border-offline {
+  border: 1px gray solid;
+  background: transparent;
+}
+
+.user-status {
+  background: linear-gradient(to top, orangered, red, orange);
+  padding: 5px 3px;
+  font-size: 11px;
+  font-weight: 900;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 9px;
+  z-index: 1000;
+}
+
+.offline {
+  background: rgb(68, 68, 68);
+}
+
+@media screen and (max-width: 1224px) {
+  .battle-wrapper h2 {
+    font-size: 28px;
+  }
+
+  .battle-wrapper p {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+}
+@media screen and (max-width: 840px) {
+  .battle-wrapper h2 {
+    font-size: 20px;
+  }
+
+  .battle-wrapper p {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 416px) {
+  .battle .header h2 {
+    font-size: 20px;
+  }
+  .battle .header p {
+    line-height: 1.8;
+    font-size: 13px;
+  }
+
+  .battle-wrapper {
+    position: absolute;
+    bottom: 30px;
+  }
+
+  .battle-wrapper h2 {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .battle-wrapper p {
+    font-size: 13px;
+  }
+
+  .battle-container-info {
+    margin-bottom: 20px;
+  }
+
+  .battle-container-info .info-item {
+    font-size: 10px;
+  }
+
+  .genre {
+    display: none;
+  }
+
+  .user-profile {
+    width: 45px;
+    height: 45px;
+  }
+
+  .user-status {
+    font-size: 7px;
+    padding: 2px 4px;
+    left: 5px;
+  }
 }
