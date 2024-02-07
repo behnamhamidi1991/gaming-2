@@ -134,6 +134,11 @@
   margin-bottom: 10px;
 }
 
+.btn-container {
+  display: flex;
+  gap: 5px;
+}
+
 .readmore-btn {
   display: flex;
   gap: 5px;

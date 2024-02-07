@@ -51,10 +51,15 @@ const Productions = () => {
               <p className="production-content-text">
                 {item.text.substring(1, 190)} ...
               </p>
-              <button className="readmore-btn">
-                <FaCartShopping />
-                <span>Buy The License</span>
-              </button>
+              <div className="btn-container">
+                <button className="readmore-btn">
+                  <FaCartShopping />
+                  <span>Add To Cart</span>
+                </button>
+                <button className="readmore-btn">
+                  <span>Read More</span>
+                </button>
+              </div>
             </div>
           </div>
         ))}
