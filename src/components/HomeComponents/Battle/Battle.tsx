@@ -1,5 +1,6 @@
 import "./battle.css";
 import { users } from "../../../userData";
+import Timer from "../../shared/Timer/Timer";
 
 const Battle = () => {
   return (
@@ -13,6 +14,19 @@ const Battle = () => {
       </div>
 
       <div className="battle-container">
+        <div className="off-sign">
+          <p className="off-sign-text">
+            <span>50%</span>
+            <br />
+            Amazing Special Offer For Premium Users
+          </p>
+        </div>
+        <div className="count-down-box">
+          <h3>Get Premium to play online with pros!</h3>
+          <h4>The amazing offer will be accessible for</h4>
+
+          <Timer />
+        </div>
         <div className="battle-wrapper">
           <div className="battle-container-top">
             <h2>Battle Of Armagedon: Ultimate Action Online Game</h2>

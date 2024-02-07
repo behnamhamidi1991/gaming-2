@@ -1,3 +1,13 @@
+:root {
+  --primary-color: #1f2428;
+  --secondary-color: #ececec;
+  --post-color: #2f353d;
+  --btn-color: rgb(78, 83, 88);
+  --btn1: #3c62df;
+  --btn2: #8000ff;
+  --btn3: #ff007b;
+}
+
 .battle {
   padding: 50px 7%;
   background-color: var(--primary-color);
@@ -130,6 +140,50 @@
 
 .offline {
   background: rgb(68, 68, 68);
+}
+
+/* COUNT DOWN */
+.count-down-box {
+  position: absolute;
+  top: 10%;
+  right: 20%;
+  text-align: center;
+}
+
+.count-down-box h3 {
+  font-weight: 300;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.count-down-box h4 {
+  font-weight: 700;
+  font-size: 17px;
+  margin-bottom: 8px;
+}
+
+.off-sign {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 900;
+  position: absolute;
+  border: 1px solid white;
+  height: 180px;
+  width: 140px;
+  padding: 0 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5%;
+  left: 20px;
+  top: 20px;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.off-sign .off-sign-text span {
+  font-size: 52px;
 }
 
 @media screen and (max-width: 1224px) {
