@@ -6,8 +6,11 @@ import { IoMdSunny } from "react-icons/io";
 import { FaMoon } from "react-icons/fa";
 import { FaShoppingCart } from "react-icons/fa";
 import profileImage from "../../assets/users/3.jpg";
+import { useState } from "react";
 
 const Header = ({ darkTheme, theme }) => {
+  const [openMenu, setOpenMenu] = useState<boolean>(false);
+
   return (
     <header>
       <Link to="/" className="header-logo">
@@ -43,13 +46,20 @@ const Header = ({ darkTheme, theme }) => {
           <FaUser className="header-use-link-icon" />
           <p>Dashboard</p>
         </Link>
-        <li>
+        <li onClick={() => setOpenMenu(!openMenu)}>
           <img
             src={profileImage}
             alt="profile-image"
             className="header-profile-image"
           />
         </li>
+        <div
+          className={openMenu ? "header-setting menu-block" : "header-setting"}
+        >
+          <li className="header-setting-item-1">Setting</li>
+          <li className="header-setting-item-2 ">Tickets</li>
+          <li className="header-setting-item-3 ">Log Out</li>
+        </div>
       </div>
     </header>
   );

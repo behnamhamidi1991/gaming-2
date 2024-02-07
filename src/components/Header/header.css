@@ -57,6 +57,7 @@ header {
 .header-user {
   display: flex;
   gap: 10px;
+  position: relative;
 }
 .header-user .header-user-link {
   background-color: var(--post-color);
@@ -124,4 +125,44 @@ header {
   border-radius: 50%;
   border: var(--secondary-color) 1px solid;
   cursor: pointer;
+}
+
+/* Menu */
+.header-setting {
+  position: absolute;
+  top: 57px;
+  right: -35px;
+  z-index: 1200;
+  line-height: 2.4;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: 800;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  width: 100px;
+  padding: 10px 0;
+  text-align: center;
+  display: none;
+  transition: all ease-in-out 0.2s;
+}
+
+.menu-block {
+  display: block;
+}
+
+.header-setting-item-1,
+.header-setting-item-2,
+.header-setting-item-3 {
+  cursor: pointer;
+}
+
+.header-setting-item-2 {
+  margin-bottom: 10px;
+}
+
+.header-setting-item-3 {
+  border-top: solid 1px gray;
+  text-align: center;
+  padding-top: 6px;
 }

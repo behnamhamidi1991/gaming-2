@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import { slides } from "../../../data";
 import "./topslider.css";
+import { Link } from "react-router-dom";
 
 const TopSlider = () => {
   return (
@@ -31,6 +32,9 @@ const TopSlider = () => {
               <h1>{slide.title}</h1>
               <h2>{slide.subtitle}</h2>
               <p>{slide.text.substring(1, 230)} ...</p>
+              <Link to="/" className="topSlider-read-more-btn">
+                Read More
+              </Link>
             </div>
           </SwiperSlide>
         ))}
