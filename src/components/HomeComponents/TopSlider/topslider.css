@@ -76,3 +76,36 @@
   border-top: none;
   border-right: none;
 }
+
+@media screen and (max-width: 998px) {
+  .top-slider-content {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 694px) {
+  .top-slider-content {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .top-slider-content {
+    width: 100%;
+    padding: 0 5%;
+    left: 0;
+  }
+
+  .top-slider-content h1 {
+    font-size: 22px;
+    font-weight: 700;
+  }
+}
+@media screen and (max-width: 410px) {
+  .top-slider-content h1 {
+    font-size: 19px;
+  }
+  .top-slider-content h2 {
+    font-size: 12px;
+  }
+}
