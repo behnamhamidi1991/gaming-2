@@ -1,0 +1,30 @@
+.battle {
+  padding: 50px 7%;
+  background-color: var(--primary-color);
+}
+
+.battle .header {
+  margin-bottom: 10px;
+}
+
+.battle .header h2 {
+  font-weight: 300;
+  margin-bottom: 9px;
+  color: var(--secondary-color);
+}
+.battle .header p {
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: var(--secondary-color);
+}
+
+.battle-container {
+  background: url("../../../assets//battle.jpg");
+  width: 100%;
+  height: 800px;
+  background-size: cover;
+  border-radius: 7px;
+  background-blend-mode: color;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
+}
