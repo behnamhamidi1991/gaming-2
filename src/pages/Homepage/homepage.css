@@ -1,4 +1,6 @@
 .homepage {
-  height: 100vh;
   width: 100%;
+  height: 100vh;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
