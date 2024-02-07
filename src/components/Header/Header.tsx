@@ -7,9 +7,12 @@ import { FaMoon } from "react-icons/fa";
 import { FaShoppingCart } from "react-icons/fa";
 import profileImage from "../../assets/users/3.jpg";
 import { useState } from "react";
+import { RxHamburgerMenu } from "react-icons/rx";
+import { RxCross2 } from "react-icons/rx";
 
 const Header = ({ darkTheme, theme }) => {
   const [openMenu, setOpenMenu] = useState<boolean>(false);
+  const [openSideMenu, setOpenSideMenu] = useState<boolean>(false);
 
   return (
     <header>
@@ -18,6 +21,10 @@ const Header = ({ darkTheme, theme }) => {
         <span>Ninja Gamer</span>
       </Link>
       <div className="header-links">
+        <Link to="/" className="header-logo only-mobile">
+          <GiNinjaHeroicStance className="header-logo-image" />
+          <span>Ninja Gamer</span>
+        </Link>
         <Link to="/" className="header-link-item">
           Home
         </Link>
@@ -32,6 +39,12 @@ const Header = ({ darkTheme, theme }) => {
         </Link>
         <Link to="/Contact" className="header-link-item">
           Contact
+        </Link>
+        <Link to="/Contact" className="header-link-item only-mobile">
+          Dashboard
+        </Link>
+        <Link to="/Contact" className="header-link-item only-mobile">
+          Logout
         </Link>
       </div>
       <div className="header-user">
@@ -61,6 +74,7 @@ const Header = ({ darkTheme, theme }) => {
           <li className="header-setting-item-3 ">Log Out</li>
         </div>
       </div>
+      <RxHamburgerMenu className="burger-icon" />
     </header>
   );
 };
