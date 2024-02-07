@@ -188,15 +188,3 @@ export const productions: ProductionInterface[] = [
     tags: ["Shooting", "Third-Person", "Mystory", "Action", "Puzzle"],
   },
 ];
-
-interface StoryInterface {
-  id: string;
-  img: string;
-}
-
-export const story: StoryInterface[] = [
-  {
-    id: "1",
-    img: "",
-  },
-];
