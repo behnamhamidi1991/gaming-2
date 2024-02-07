@@ -12,7 +12,7 @@ import { RxCross2 } from "react-icons/rx";
 
 const Header = ({ darkTheme, theme }) => {
   const [openMenu, setOpenMenu] = useState<boolean>(false);
-  const [openSideMenu, setOpenSideMenu] = useState<boolean>(false);
+  const [openSideMenu, setOpenSideMenu] = useState<boolean>(true);
 
   return (
     <header>
@@ -20,7 +20,7 @@ const Header = ({ darkTheme, theme }) => {
         <GiNinjaHeroicStance className="header-logo-image" />
         <span>Ninja Gamer</span>
       </Link>
-      <div className="header-links">
+      <div className={!openSideMenu ? "header-links open" : "header-links"}>
         <Link to="/" className="header-logo only-mobile">
           <GiNinjaHeroicStance className="header-logo-image" />
           <span>Ninja Gamer</span>
@@ -74,7 +74,10 @@ const Header = ({ darkTheme, theme }) => {
           <li className="header-setting-item-3 ">Log Out</li>
         </div>
       </div>
-      <RxHamburgerMenu className="burger-icon" />
+      <RxHamburgerMenu
+        className="burger-icon"
+        onClick={() => setOpenSideMenu(!openSideMenu)}
+      />
     </header>
   );
 };
