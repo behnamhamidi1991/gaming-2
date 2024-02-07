@@ -9,7 +9,7 @@ const Timer = () => {
 
   const deadline = "April, 25, 2024";
 
-  const getTime = () => {
+  const getTime = (deadline: any) => {
     const time = Date.parse(deadline) - Date.now();
 
     setDays(Math.floor(time / (1000 * 60 * 60 * 24)));
