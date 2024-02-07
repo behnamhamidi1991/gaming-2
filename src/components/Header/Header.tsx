@@ -5,14 +5,15 @@ import { FaUser } from "react-icons/fa";
 import { IoMdSunny } from "react-icons/io";
 import { FaMoon } from "react-icons/fa";
 import { FaShoppingCart } from "react-icons/fa";
+import profileImage from "../../assets/users/3.jpg";
 
 const Header = ({ darkTheme, theme }) => {
   return (
     <header>
-      <div className="header-logo">
+      <Link to="/" className="header-logo">
         <GiNinjaHeroicStance className="header-logo-image" />
         <span>Ninja Gamer</span>
-      </div>
+      </Link>
       <div className="header-links">
         <Link to="/" className="header-link-item">
           Home
@@ -35,13 +36,20 @@ const Header = ({ darkTheme, theme }) => {
           <FaShoppingCart className="cart" />
           <span>0</span>
         </Link>
-        <Link to="/dashboard" className="header-user-link">
-          <FaUser />
-          <p>Dashboard</p>
-        </Link>
         <button onClick={() => darkTheme(!theme)} className="dark-light-btn">
           {theme ? <IoMdSunny /> : <FaMoon />}
         </button>
+        <Link to="/dashboard" className="header-user-link">
+          <FaUser className="header-use-link-icon" />
+          <p>Dashboard</p>
+        </Link>
+        <li>
+          <img
+            src={profileImage}
+            alt="profile-image"
+            className="header-profile-image"
+          />
+        </li>
       </div>
     </header>
   );
