@@ -1,4 +1,3 @@
-import React from "react";
 import TopSlider from "../../components/HomeComponents/TopSlider/TopSlider";
 
 const Homepage = () => {

@@ -8,9 +8,8 @@ import { FaShoppingCart } from "react-icons/fa";
 import profileImage from "../../assets/users/3.jpg";
 import { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
-import { RxCross2 } from "react-icons/rx";
 
-const Header = ({ darkTheme, theme }) => {
+const Header = ({ darkTheme, theme }: any) => {
   const [openMenu, setOpenMenu] = useState<boolean>(false);
   const [openSideMenu, setOpenSideMenu] = useState<boolean>(true);
 
