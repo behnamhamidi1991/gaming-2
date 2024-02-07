@@ -30,7 +30,7 @@ const TopSlider = () => {
             <div className="top-slider-content">
               <h1>{slide.title}</h1>
               <h2>{slide.subtitle}</h2>
-              <p>{slide.text}</p>
+              <p>{slide.text.substring(1, 230)} ...</p>
             </div>
           </SwiperSlide>
         ))}
