@@ -11,15 +11,22 @@ const Battle = () => {
           We&apos;re giving you a perfect 50% offer to play online in our
           high-speed powerful servers
         </p>
+        <div className="count-down-box-top">
+          <Timer />
+        </div>
       </div>
 
       <div className="battle-container">
-        <div className="off-sign">
-          <p className="off-sign-text">
-            <span>50%</span>
-            <br />
-            Amazing Special Offer For Premium Users
-          </p>
+        <div className="off-sign-wrapper">
+          <div className="off-sign-display">
+            <div className="off-sign-time">
+              <p className="off-sign-text">
+                <div className="off-sign-percentage">50%</div>
+                Amazing Special Offer For Premium Users
+              </p>
+            </div>
+          </div>
+          <span></span>
         </div>
         <div className="count-down-box">
           <h3>Get Premium to play online with pros!</h3>
