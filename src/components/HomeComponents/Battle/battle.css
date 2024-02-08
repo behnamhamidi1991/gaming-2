@@ -151,15 +151,15 @@
 }
 
 .count-down-box h3 {
-  font-weight: 300;
-  font-size: 32px;
-  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 5px;
 }
 
 .count-down-box h4 {
-  font-weight: 700;
+  font-weight: 300;
   font-size: 17px;
-  margin-bottom: 8px;
+  margin-bottom: 14px;
 }
 
 .off-sign-wrapper {
@@ -338,5 +338,14 @@
     font-size: 7px;
     padding: 2px 4px;
     left: 5px;
+  }
+}
+
+@media screen and (max-width: 416px) {
+  .battle .header h2 {
+    font-size: 16px;
+  }
+  .battle .header p {
+    font-size: 12px;
   }
 }

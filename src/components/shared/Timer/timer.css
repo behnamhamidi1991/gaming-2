@@ -3,10 +3,11 @@
   gap: 70px;
   background: var(--primary-color);
   color: var(--secondary-color);
-  padding: 35px 0;
+  padding: 42px 55px;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
+  cursor: default;
 }
 
 .counter {

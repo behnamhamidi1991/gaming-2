@@ -1,0 +1,27 @@
+:root {
+  --primary-color: #1f2428;
+  --secondary-color: #ececec;
+  --post-color: #2f353d;
+  --btn-color: rgb(78, 83, 88);
+  --btn1: #3c62df;
+  --btn2: #8000ff;
+  --btn3: #ff007b;
+}
+
+footer {
+  background-color: var(--post-color);
+  color: var(--secondary-color);
+  padding: 80px 12%;
+}
+
+.footer-middle {
+  display: flex;
+  margin-top: 40px;
+  gap: 15px;
+}
+
+.footer-middle img {
+  width: 280px;
+  border-radius: 6px;
+  box-shadow: 3px 3px 20px 3px rgba(0, 0, 0, 0.1);
+}

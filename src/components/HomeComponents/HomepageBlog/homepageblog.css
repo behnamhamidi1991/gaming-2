@@ -56,7 +56,7 @@
 }
 
 .post img:hover {
-  transform: scale(1.1);
+  transform: scale(1.06);
   filter: brightness(90%) hue-rotate(45deg);
 }
 
