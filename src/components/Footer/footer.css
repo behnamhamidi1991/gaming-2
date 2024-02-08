@@ -14,14 +14,51 @@ footer {
   padding: 80px 12%;
 }
 
+.footer-top h2 {
+  font-size: 27px;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+}
+
+.footer-top p {
+  margin-top: 9px;
+  font-weight: 400;
+}
+
 .footer-middle {
   display: flex;
-  margin-top: 40px;
-  gap: 15px;
+  margin-top: 20px;
+  gap: 12px;
 }
 
 .footer-middle img {
-  width: 280px;
+  width: 120px;
   border-radius: 6px;
-  box-shadow: 3px 3px 20px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 9px 2px rgba(0, 0, 0, 0.3);
+}
+
+.footer-links {
+  display: flex;
+  gap: 85px;
+  line-height: 1.9;
+  margin-top: 40px;
+}
+
+.footer-links .link-box h4 {
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.footer-links .link-box li {
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 300;
+  /* text-transform: uppercase; */
+}
+
+.bank-logos {
+  margin-top: 20px;
+  width: 250px;
 }
