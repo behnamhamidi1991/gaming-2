@@ -16,6 +16,8 @@ import { IoLogoWhatsapp } from "react-icons/io";
 import { FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
+  const getDate = new Date().getFullYear();
+
   return (
     <footer>
       <div className="footer-left">
@@ -124,26 +126,21 @@ const Footer = () => {
         <div className="subscription">
           <h2>Subscribe To Get The Latest</h2>
           <div className="form-container">
-            <input type="text" />
+            <input type="email" placeholder="Subscribe with your email ..." />
             <button>Subscribe</button>
           </div>
         </div>
         <div className="contact-info">
           <h2>Contact Us</h2>
           <ul className="telephone">
-            <h4>Tel</h4>
             <li>+98 542 8546 2654</li>
             <li>+98 224 2369 0001</li>
             <li>+98 456 1136 0001</li>
-          </ul>
-          <ul className="email">
-            <h4>Email</h4>
             <li>info@ninjagamer.com</li>
             <li>ninjagamer-admin@gmail.com</li>
           </ul>
         </div>
       </div>
-      <div className="footer-copyright"></div>
     </footer>
   );
 };
