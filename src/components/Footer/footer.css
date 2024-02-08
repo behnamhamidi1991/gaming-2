@@ -40,6 +40,7 @@ footer {
 
 .footer-middle {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 30px;
   gap: 12px;
 }
@@ -52,6 +53,7 @@ footer {
 
 .footer-links {
   display: flex;
+  flex-wrap: wrap;
   gap: 99px;
   line-height: 1.9;
   margin-top: 25px;
@@ -168,4 +170,56 @@ footer {
 .telephone {
   margin-top: 10px;
   line-height: 1.9;
+}
+
+@media screen and (max-width: 1506px) {
+  footer {
+    padding: 80px 5%;
+  }
+}
+
+@media screen and (max-width: 1252px) {
+  footer {
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-left {
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 826px) {
+  .footer-links {
+    gap: 39px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .footer-middle {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    gap: 12px;
+  }
+
+  .footer-middle img {
+    width: 70px;
+  }
+
+  .footer-top p {
+    font-size: 13px;
+  }
+
+  .footer-links {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 362px) {
+  .footer-top p {
+    font-size: 11px;
+  }
 }
