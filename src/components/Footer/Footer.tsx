@@ -5,6 +5,15 @@ import companyImage2 from "../../assets/companies/2.jpg";
 import companyImage3 from "../../assets/companies/3.jpg";
 import companyImage4 from "../../assets/companies/4.jpg";
 import companyImage5 from "../../assets/companies/5.jpg";
+import { AiFillInstagram } from "react-icons/ai";
+import { FaTelegram } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
+import { FaYoutube } from "react-icons/fa";
+import { PiTwitchLogoFill } from "react-icons/pi";
+import { FaPinterest } from "react-icons/fa";
+import { IoLogoWhatsapp } from "react-icons/io";
+import { FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -80,8 +89,45 @@ const Footer = () => {
         </div>
       </div>
       <div className="right">
-        <div className="contact-link"></div>
-        <div className="subscription"></div>
+        <div className="contact-link">
+          <h2>Follow Us In Social Network</h2>
+          <ul className="social-container">
+            <li className="social-link">
+              <AiFillInstagram />
+            </li>
+            <li className="social-link">
+              <FaTelegram />
+            </li>
+            <li className="social-link">
+              <FaFacebook />
+            </li>
+            <li className="social-link">
+              <FaSquareXTwitter />
+            </li>
+            <li className="social-link">
+              <FaYoutube />
+            </li>
+            <li className="social-link">
+              <PiTwitchLogoFill />
+            </li>
+            <li className="social-link">
+              <FaPinterest />
+            </li>
+            <li className="social-link">
+              <IoLogoWhatsapp />
+            </li>
+            <li className="social-link">
+              <FaLinkedin />
+            </li>
+          </ul>
+        </div>
+        <div className="subscription">
+          <h2>Subscribe To Get The Latest</h2>
+          <div className="form-container">
+            <input type="text" />
+            <button>Subscribe</button>
+          </div>
+        </div>
       </div>
       <div className="footer-copyright"></div>
     </footer>

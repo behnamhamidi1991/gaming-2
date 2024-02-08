@@ -12,6 +12,8 @@ footer {
   background-color: var(--post-color);
   color: var(--secondary-color);
   padding: 80px 12%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer-top h2 {
@@ -61,4 +63,65 @@ footer {
 .bank-logos {
   margin-top: 20px;
   width: 250px;
+}
+
+/* RIGHT ------------------------------------------------------------------------------ */
+.contact-link h2 {
+  font-weight: 400;
+  font-size: 15.2px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.social-container {
+  display: flex;
+  gap: 8px;
+}
+
+.social-link {
+  font-size: 24px;
+  color: var(--secondary-color);
+  cursor: pointer;
+  transition: all ease-in-out 0.1s;
+}
+
+.social-link:hover {
+  color: rgb(160, 160, 160);
+}
+
+/* SUBSCRIPTION */
+.subscription {
+  margin-top: 40px;
+}
+
+.subscription h2 {
+  font-weight: 400;
+  font-size: 15.2px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.form-container {
+  width: 100%;
+  position: relative;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-bottom: 1px solid var(--secondary-color);
+}
+
+.form-container button {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  color: var(--secondary-color);
+  right: 0;
+  bottom: 9px;
 }
