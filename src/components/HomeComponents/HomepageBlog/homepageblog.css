@@ -15,34 +15,18 @@
   color: var(--secondary-color);
 }
 
-.ptext-wrapper {
+/* .ptext-wrapper {
   display: inline-block;
-  width: fit-content;
-}
+} */
 .animation-text {
   font-weight: 400;
   margin-bottom: 20px;
   color: var(--secondary-color);
-  border-right: 2px solid;
-  padding-right: 5px;
   letter-spacing: 1px;
   width: 100%;
-  white-space: nowrap;
   overflow: hidden;
-  animation: typing 2s steps(71), cursor 0.4s step-end infinite alternate;
-}
-
-@keyframes cursor {
-  50% {
-    border-color: transparent;
-  }
-}
-@keyframes typing {
-  50% {
-    from {
-      width: 0;
-    }
-  }
+  line-height: 1.8;
+  animation: cursor 0.4s step-end infinite alternate;
 }
 
 /* POSTS */
@@ -89,7 +73,7 @@
 .blog-content h3 {
   font-size: 17px;
   margin-bottom: 6px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 .blog-content p {
   font-size: 14px;
@@ -105,6 +89,7 @@
   display: flex;
   gap: 4px;
   margin-top: 10px;
+  flex-wrap: wrap;
 }
 
 .post-info span {
@@ -122,6 +107,7 @@
   display: flex;
   gap: 10px;
   margin-top: 10px;
+  flex-wrap: wrap;
 }
 
 .post-hashtags span {
@@ -157,4 +143,57 @@
   font-size: 12px;
   cursor: pointer;
   font-weight: 900;
+}
+
+@media screen and (max-width: 1664px) {
+  .blog-content h3 {
+    font-size: 15px;
+    margin-bottom: 6px;
+  }
+  .blog-content p {
+    display: none;
+  }
+
+  .post:first-child p {
+    display: block;
+  }
+}
+@media screen and (max-width: 1206px) {
+  .homepage-blog-container {
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+  }
+
+  .post:first-child {
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+  .post:first-child p {
+    display: none;
+  }
+
+  .post:first-child h3 {
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+  }
+
+  .post-info span {
+    font-size: 11px;
+  }
+
+  .post-hashtags span {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .homepage-blog-container {
+    grid-template-columns: 1fr;
+  }
+  .post-hashtags {
+    display: none;
+  }
+
+  .post-info span {
+    padding: 4px 5px;
+    font-size: 10px;
+  }
 }
