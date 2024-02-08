@@ -8,6 +8,7 @@ const AppLayout = () => {
   return (
     <div className={darkTheme ? "main dark" : "main light"}>
       <Header darkTheme={setDarkTheme} theme={darkTheme} />
+
       <main>
         <Outlet />
       </main>
