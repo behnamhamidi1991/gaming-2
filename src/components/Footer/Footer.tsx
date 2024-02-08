@@ -16,8 +16,6 @@ import { IoLogoWhatsapp } from "react-icons/io";
 import { FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
-  const getDate = new Date().getFullYear();
-
   return (
     <footer>
       <div className="footer-left">
