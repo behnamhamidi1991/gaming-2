@@ -23,6 +23,7 @@ interface UserInterface {
   profileImage: string;
   level: number;
   comment: string;
+  feedback: string;
   isOnline: boolean;
   isPremium: boolean;
   country: string;
@@ -41,6 +42,8 @@ export const users: UserInterface[] = [
     level: 74,
     comment:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+    feedback:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     isOnline: true,
     isPremium: true,
     country: "France",
@@ -61,6 +64,8 @@ export const users: UserInterface[] = [
     level: 61,
     comment:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry?!!!!!!!!!!! :-l",
+    feedback:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     isOnline: true,
     isPremium: true,
     country: "France",
@@ -81,6 +86,8 @@ export const users: UserInterface[] = [
     level: 92,
     comment:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book :))))))))))))))",
+    feedback:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     isOnline: true,
     isPremium: true,
     country: "Germany",
@@ -101,6 +108,8 @@ export const users: UserInterface[] = [
     level: 46,
     comment:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry?!! ;)",
+    feedback:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     isOnline: true,
     isPremium: true,
     country: "Spain",
@@ -121,6 +130,8 @@ export const users: UserInterface[] = [
     level: 96,
     comment:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry!!!! looooooooooool =))))",
+    feedback:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     isOnline: false,
     isPremium: true,
     country: "England",
@@ -140,6 +151,8 @@ export const users: UserInterface[] = [
     profileImage: user6,
     level: 31,
     comment: "Lorem Ipsum is simply :)",
+    feedback:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     isOnline: false,
     isPremium: false,
     country: "England",
@@ -159,6 +172,8 @@ export const users: UserInterface[] = [
     profileImage: user7,
     level: 31,
     comment: "Lorem Ipsum is simply :)",
+    feedback:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     isOnline: false,
     isPremium: false,
     country: "England",
@@ -178,6 +193,8 @@ export const users: UserInterface[] = [
     profileImage: user8,
     level: 31,
     comment: "Lorem Ipsum is simply :)",
+    feedback:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     isOnline: true,
     isPremium: false,
     country: "England",
@@ -197,6 +214,8 @@ export const users: UserInterface[] = [
     profileImage: user9,
     level: 31,
     comment: "Lorem Ipsum is simply :)",
+    feedback:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     isOnline: true,
     isPremium: false,
     country: "England",
@@ -216,6 +235,8 @@ export const users: UserInterface[] = [
     profileImage: user10,
     level: 31,
     comment: "Lorem Ipsum is simply :)",
+    feedback:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     isOnline: false,
     isPremium: false,
     country: "England",
@@ -235,6 +256,8 @@ export const users: UserInterface[] = [
     profileImage: user11,
     level: 31,
     comment: "Lorem Ipsum is simply :)",
+    feedback:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     isOnline: true,
     isPremium: false,
     country: "England",
@@ -254,6 +277,8 @@ export const users: UserInterface[] = [
     profileImage: user12,
     level: 89,
     comment: "Lorem Ipsum is simply :)",
+    feedback:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     isOnline: true,
     isPremium: true,
     country: "England",
@@ -273,6 +298,8 @@ export const users: UserInterface[] = [
     profileImage: user13,
     level: 81,
     comment: "Lorem Ipsum is simply :)",
+    feedback:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     isOnline: false,
     isPremium: true,
     country: "England",
@@ -292,6 +319,8 @@ export const users: UserInterface[] = [
     profileImage: user14,
     level: 31,
     comment: "Lorem Ipsum is simply :)",
+    feedback:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     isOnline: true,
     isPremium: true,
     country: "England",
@@ -311,6 +340,8 @@ export const users: UserInterface[] = [
     profileImage: user15,
     level: 96,
     comment: "Lorem Ipsum is simply :)",
+    feedback:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     isOnline: true,
     isPremium: true,
     country: "England",
@@ -330,6 +361,8 @@ export const users: UserInterface[] = [
     profileImage: user16,
     level: 31,
     comment: "Lorem Ipsum is simply :)",
+    feedback:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     isOnline: false,
     isPremium: false,
     country: "England",
@@ -349,6 +382,8 @@ export const users: UserInterface[] = [
     profileImage: user17,
     level: 31,
     comment: "Lorem Ipsum is simply :)",
+    feedback:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     isOnline: true,
     isPremium: false,
     country: "England",
@@ -368,6 +403,8 @@ export const users: UserInterface[] = [
     profileImage: user18,
     level: 31,
     comment: "Lorem Ipsum is simply :)",
+    feedback:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     isOnline: true,
     isPremium: true,
     country: "England",
