@@ -128,6 +128,20 @@ const Footer = () => {
             <button>Subscribe</button>
           </div>
         </div>
+        <div className="contact-info">
+          <h2>Contact Us</h2>
+          <ul className="telephone">
+            <h4>Tel</h4>
+            <li>+98 542 8546 2654</li>
+            <li>+98 224 2369 0001</li>
+            <li>+98 456 1136 0001</li>
+          </ul>
+          <ul className="email">
+            <h4>Email</h4>
+            <li>info@ninjagamer.com</li>
+            <li>ninjagamer-admin@gmail.com</li>
+          </ul>
+        </div>
       </div>
       <div className="footer-copyright"></div>
     </footer>

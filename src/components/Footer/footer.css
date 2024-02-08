@@ -115,6 +115,7 @@ footer {
   outline: none;
   background-color: transparent;
   border-bottom: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
 }
 
 .form-container button {
@@ -124,4 +125,28 @@ footer {
   color: var(--secondary-color);
   right: 0;
   bottom: 9px;
+  cursor: pointer;
+}
+
+.contact-info {
+  margin-top: 20px;
+}
+
+.contact-info h2 {
+  font-weight: 400;
+  font-size: 15.2px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+
+.telephone h4,
+.email h4 {
+  font-weight: 500;
+}
+
+.email,
+.telephone {
+  margin-top: 10px;
+  line-height: 1.5;
 }
