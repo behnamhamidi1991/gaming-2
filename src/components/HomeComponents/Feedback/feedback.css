@@ -18,26 +18,39 @@
 .user-image-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 10px;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+  padding: 0 4%;
 }
 
 .user-image-container img {
   width: 150px;
   height: 150px;
-  border-radius: 50%;
+  border-radius: 4%;
+  text-align: center;
+  margin: auto;
 }
 
 .user-name {
   font-size: 21px;
-  font-weight: 300;
-  margin-top: 20px;
+  font-weight: 400;
+  margin-top: 5px;
 }
 
-.user-feedback-box {
-  padding-bottom: 80px;
+.feedback-box {
+  display: flex;
+  gap: 0;
+}
+.feedback-left {
+  flex: 2;
+  background-color: var(--post-color);
+  padding: 35px 20px;
+}
+.feedback-right {
+  flex: 1;
+  background-color: var(--post-color);
+  padding: 35px 20px;
+  line-height: 1.7;
 }
 
 .feedback-content {
@@ -47,8 +60,9 @@
 
 .user-feedback {
   line-height: 1.9;
-  padding: 0 15%;
 }
+
+/* RIGHT */
 
 @media screen and (max-width: 1198px) {
   .user-feedback {

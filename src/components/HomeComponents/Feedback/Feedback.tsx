@@ -21,12 +21,30 @@ const Feedback = () => {
       >
         {users.map((user) => (
           <SwiperSlide key={user.id} className="user-feedback-box">
-            <div className="user-image-container">
-              <img src={user.profileImage} alt="profile-image" />
-              <p className="user-name">{user.name}</p>
-            </div>
-            <div className="feedback-content">
-              <p className="user-feedback">{user.feedback}</p>
+            <div className="feedback-box">
+              <div className="feedback-left">
+                <div className="user-image-container">
+                  <img src={user.profileImage} alt="profile-image" />
+                  <p className="user-name">{user.name}</p>
+                  <div className="feedback-content">
+                    <p className="user-feedback">{user.feedback}</p>
+                  </div>
+                </div>
+              </div>
+              <div className="feedback-right">
+                <h3>User Info</h3>
+                <p>Name: {user.name}</p>
+                <p>Level: {user.level}</p>
+                <p>Country: {user.country}</p>
+                <p>City: {user.city}</p>
+                <p>Awards: {user.awards}</p>
+                <p>Followers {user.followers}</p>
+                <p>Following {user.following}</p>
+                <p>Status: {user.isOnline === true ? "Onlioe" : "Offline"}</p>
+                <p>
+                  Account: {user.isPremium === true ? "Premium" : "Regular"}
+                </p>
+              </div>
             </div>
           </SwiperSlide>
         ))}
