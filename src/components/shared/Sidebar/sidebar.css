@@ -12,6 +12,8 @@
   background-color: var(--post-color);
   color: var(--secondary-color);
   padding: 15px 20px;
+  position: sticky;
+  top: 0;
 }
 
 .sidebar h3 {

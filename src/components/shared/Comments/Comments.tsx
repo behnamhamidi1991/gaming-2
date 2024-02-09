@@ -1,4 +1,5 @@
 import "./comments.css";
+import { users } from "../../../userData";
 
 const Comments = () => {
   return (
@@ -17,7 +18,20 @@ const Comments = () => {
           <button>Submit</button>
         </form>
       </div>
-      <div className="comments-bottom"></div>
+      <div className="comments-bottom">
+        <div className="user-comments-box">
+          {users.map((user) => (
+            <div key={user.id} className="user-single-comment-box">
+              <div className="comments-user-image">
+                <img src={user.profileImage} alt="user-image" />
+              </div>
+              <div className="comments-user-content">
+                <p>{user.comment}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 };
