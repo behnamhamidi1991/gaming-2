@@ -6,6 +6,7 @@ import Cart from "./pages/Cart/Cart";
 import AppLayout from "./layout/AppLayout";
 import ErrorPage from "./pages/Errorpage/ErrorPage";
 import BlogPost from "./pages/SingleProduction/SingleProduction";
+import Dashboard from "./pages/Dashboard/Dashboard";
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
       {
         path: "/cart",
         element: <Cart />,
+      },
+      {
+        path: "/dashboard",
+        element: <Dashboard />,
       },
       {
         path: "/license/:id",

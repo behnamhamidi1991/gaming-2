@@ -6,12 +6,26 @@ import { IoMdSunny } from "react-icons/io";
 import { FaMoon } from "react-icons/fa";
 import { FaShoppingCart } from "react-icons/fa";
 import profileImage from "../../assets/users/3.jpg";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 
 const Header = ({ darkTheme, theme }: any) => {
   const [openMenu, setOpenMenu] = useState<boolean>(false);
   const [openSideMenu, setOpenSideMenu] = useState<boolean>(true);
+
+  useEffect(() => {
+    window.addEventListener("scroll", isSticky);
+    return () => {
+      window.removeEventListener("scroll", isSticky);
+    };
+  });
+  const isSticky = (e) => {
+    const header = document.querySelector("header");
+    const scrollTop = window.scrollY;
+    scrollTop >= 300
+      ? header?.classList.add("is-sticky")
+      : header?.classList.remove("is-sticky");
+  };
 
   return (
     <header>
