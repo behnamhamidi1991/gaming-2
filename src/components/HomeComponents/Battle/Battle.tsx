@@ -1,10 +1,22 @@
 import "./battle.css";
 import { users } from "../../../userData";
 import Timer from "../../shared/Timer/Timer";
+import { useRef } from "react";
+import { useInView } from "framer-motion";
 
 const Battle = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
   return (
-    <div className="battle">
+    <div
+      className="battle"
+      ref={ref}
+      style={{
+        transform: isInView ? "none" : "translateY(200px)",
+        opacity: isInView ? 1 : 0,
+        transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+      }}
+    >
       <div className="header">
         <h2>Play Battle Of Armagedon Online</h2>
         <p>

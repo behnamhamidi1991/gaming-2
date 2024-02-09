@@ -2,10 +2,15 @@ import "./productions.css";
 import { productions } from "../../../data";
 import { FaCartShopping } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const Productions = () => {
   return (
-    <div className="productions">
+    <motion.div
+      className="productions"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+    >
       <div className="header">
         <h2>Our Top Productions</h2>
         <p>These are the 8 top games our player buy every season</p>
@@ -65,7 +70,7 @@ const Productions = () => {
           </div>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 };
 

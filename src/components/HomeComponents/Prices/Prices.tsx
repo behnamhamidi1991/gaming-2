@@ -3,10 +3,22 @@ import { prices } from "../../../data";
 import { BiCheck } from "react-icons/bi";
 import { RxCross2 } from "react-icons/rx";
 import { FaCartShopping } from "react-icons/fa6";
+import { useRef } from "react";
+import { useInView } from "framer-motion";
 
 const Prices = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
   return (
-    <div className="price-section">
+    <div
+      className="price-section"
+      ref={ref}
+      style={{
+        transform: isInView ? "none" : "translateX(-200px)",
+        opacity: isInView ? 1 : 0,
+        transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+      }}
+    >
       <div className="price-header">
         <h2>Upgrade your account</h2>
         <p>Upgrade your account to use our servers and streaming services</p>
