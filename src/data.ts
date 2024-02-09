@@ -253,7 +253,7 @@ export const prices: PriceInterface[] = [
   },
   {
     id: "4",
-    title: "VIP",
+    title: "VIP Account",
     price: 389,
     offer: true,
     offPrice: 233.4,
