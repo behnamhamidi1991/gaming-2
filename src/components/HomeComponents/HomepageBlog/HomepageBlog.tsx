@@ -40,11 +40,7 @@ const HomepageBlog = () => {
                 </span>
                 <span>Views: {post.views}</span>
               </div>
-              <div className="post-hashtags">
-                {post.hashtags.map((hashtag) => (
-                  <span># {hashtag}</span>
-                ))}
-              </div>
+
               <button className="blog-readmore-btn">Read More</button>
             </div>
           </div>

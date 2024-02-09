@@ -1,6 +1,7 @@
 import "./productions.css";
 import { productions } from "../../../data";
 import { FaCartShopping } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const Productions = () => {
   return (
@@ -56,9 +57,9 @@ const Productions = () => {
                   <FaCartShopping />
                   <span>Add To Cart</span>
                 </button>
-                <button className="readmore-btn">
+                <Link to={`/blog/${item.id}`} className="readmore-btn">
                   <span>Read More</span>
-                </button>
+                </Link>
               </div>
             </div>
           </div>

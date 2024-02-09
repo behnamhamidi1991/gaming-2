@@ -11,12 +11,10 @@ const Feedback = () => {
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
+        loop={true}
         autoplay={{
           delay: 2500,
           disableOnInteraction: false,
-        }}
-        pagination={{
-          clickable: true,
         }}
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
