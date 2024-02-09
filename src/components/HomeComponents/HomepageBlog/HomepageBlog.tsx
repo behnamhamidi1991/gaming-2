@@ -2,6 +2,7 @@ import "./homepageblog.css";
 import { blogPosts } from "../../../blogData";
 import { FaUser } from "react-icons/fa";
 import { CgCalendarDates } from "react-icons/cg";
+import { hashtags } from "../../../blogData";
 
 const HomepageBlog = () => {
   return (
@@ -39,6 +40,11 @@ const HomepageBlog = () => {
                   {post.writer}
                 </span>
                 <span>Views: {post.views}</span>
+              </div>
+              <div className="post-hashtags">
+                {hashtags.map((item) => (
+                  <span key={item.id}>{item.hashtag}</span>
+                ))}
               </div>
 
               <button className="blog-readmore-btn">Read More</button>
