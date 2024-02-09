@@ -57,7 +57,7 @@ const Productions = () => {
                   <FaCartShopping />
                   <span>Add To Cart</span>
                 </button>
-                <Link to={`/blog/${item.id}`} className="readmore-btn">
+                <Link to={`/license/${item.id}`} className="readmore-btn">
                   <span>Read More</span>
                 </Link>
               </div>
