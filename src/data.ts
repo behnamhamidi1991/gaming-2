@@ -297,3 +297,37 @@ export const prices: PriceInterface[] = [
     vipCart: true,
   },
 ];
+
+interface SidebarLinkInterface {
+  id: string;
+  title: string;
+  link: string;
+}
+
+export const sidebarLinks: SidebarLinkInterface[] = [
+  {
+    id: "1",
+    title: "World greatest game center",
+    link: "/blog/1",
+  },
+  {
+    id: "2",
+    title: "Scoprpion changes in New MK Series",
+    link: "/blog/2",
+  },
+  {
+    id: "3",
+    title: "Lara Craft new features & abilities",
+    link: "/blog/3",
+  },
+  {
+    id: "4",
+    title: "Th best consule according to gamers",
+    link: "/blog/4",
+  },
+  {
+    id: "5",
+    title: "How Nintendo changed through time",
+    link: "/blog/5",
+  },
+];

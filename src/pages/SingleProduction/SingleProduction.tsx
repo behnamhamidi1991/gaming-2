@@ -7,8 +7,6 @@ const SingleProduction = () => {
   const { id } = useParams();
   const newProduct = productions.find((item) => item.id === id);
 
-  console.log(newProduct);
-
   return (
     <div className="single-production-page">
       <div className="single-production-top"></div>

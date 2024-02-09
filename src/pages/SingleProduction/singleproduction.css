@@ -1,6 +1,7 @@
 .single-production-page {
-  margin: 80px 0;
-  padding: 0 6%;
+  padding: 80px 6%;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 /* TOP */
@@ -8,6 +9,7 @@
 /* CONTENT */
 .single-production-content {
   display: flex;
+  gap: 15px;
 }
 /* LEFT */
 .single-production-left {

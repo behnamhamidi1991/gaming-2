@@ -1,4 +1,102 @@
+:root {
+  --primary-color: #1f2428;
+  --secondary-color: #ececec;
+  --post-color: #2f353d;
+  --btn-color: rgb(78, 83, 88);
+  --btn1: #3c62df;
+  --btn2: #8000ff;
+  --btn3: #ff007b;
+}
+
+.sidebar {
+  background-color: var(--post-color);
+  color: var(--secondary-color);
+  padding: 15px 20px;
+}
+
+.sidebar h3 {
+  font-weight: 300;
+  margin-top: 4px;
+  margin-bottom: 3px;
+}
+
+.first-sidebar-writer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
 .first-sidebar-writer img {
   width: 150px;
   height: 150px;
+  border-radius: 5px;
+}
+
+.first-sidebar-writer-info p {
+  font-weight: 300;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+.contact-me {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.contact-me .writer-contact-icon {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.writer-contact-icon:hover {
+  color: rgb(63, 133, 253);
+}
+
+.second-sidebar-blog {
+  margin-bottom: 40px;
+}
+
+.second-sidebar-blog a {
+  display: flex;
+  flex-direction: column;
+  color: var(--secondary-color);
+  margin-top: 16px;
+  border-bottom: 1px solid gray;
+  padding-bottom: 5px;
+}
+
+.second-sidebar-blog a:hover {
+  color: rgb(63, 133, 253);
+}
+
+.third-sidebar-productions img {
+  width: 290px;
+  height: 100%;
+}
+
+.third-sidebar-productions {
+  cursor: pointer;
+  display: flex;
+  gap: 4px;
+  flex-direction: column;
+}
+
+.third-sidebar-productions-image {
+  overflow: hidden;
+  background-color: #000;
+}
+
+.third-sidebar-productions-image img {
+  opacity: 0.5;
+  object-fit: cover;
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  opacity: calc(0.5);
+}
+
+.third-sidebar-productions-image img:hover {
+  transform: scale(1.2);
 }
