@@ -1,0 +1,19 @@
+.dashboard {
+  padding: 80px 10%;
+}
+
+.dashboard-top h2 {
+  font-weight: 300;
+}
+
+.dashboard-content {
+  display: flex;
+}
+
+.dashboard-content .dashboard-content-left {
+  flex: 4;
+}
+
+.dashboard-content .dashboard-content-right {
+  flex: 1;
+}
