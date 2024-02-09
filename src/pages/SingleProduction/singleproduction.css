@@ -36,6 +36,8 @@
 .production-content-info-box {
   display: flex;
   gap: 7px;
+  flex-wrap: wrap;
+  margin-top: 10px;
 }
 
 .production-content-info-box span {
@@ -79,4 +81,10 @@
 /* RIGHT --------------------------------------- */
 .single-production-right {
   flex: 1;
+}
+
+@media screen and (max-width: 1130px) {
+  .single-production-right {
+    display: none;
+  }
 }
