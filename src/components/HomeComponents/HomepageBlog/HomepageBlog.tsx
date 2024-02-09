@@ -3,22 +3,10 @@ import { blogPosts } from "../../../blogData";
 import { FaUser } from "react-icons/fa";
 import { CgCalendarDates } from "react-icons/cg";
 import { hashtags } from "../../../blogData";
-import { useRef } from "react";
-import { useInView } from "framer-motion";
 
 const HomepageBlog = () => {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
   return (
-    <div
-      className="homepage-blog"
-      ref={ref}
-      style={{
-        transform: isInView ? "none" : "translateX(-200px)",
-        opacity: isInView ? 1 : 0,
-        transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
-      }}
-    >
+    <div className="homepage-blog">
       <div className="homepage-blog-header">
         <h2>Blog Page | News</h2>
         <div className="ptext-wrapper">

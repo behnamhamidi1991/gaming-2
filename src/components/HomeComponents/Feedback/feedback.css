@@ -76,9 +76,21 @@
     padding: 0 6%;
   }
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 590px) {
   .user-feedback {
-    padding: 0 4%;
+    padding: 0 1%;
     font-size: 14px;
+  }
+
+  .user-image-container {
+    padding: 80px 5%;
+  }
+}
+@media screen and (max-width: 399px) {
+  .user-feedback {
+    font-size: 12px;
+  }
+  .feedback {
+    padding: 100px 1%;
   }
 }

@@ -6,22 +6,10 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { FaStar } from "react-icons/fa";
-import { useRef } from "react";
-import { useInView } from "framer-motion";
 
 const Feedback = () => {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
   return (
-    <div
-      className="feedback"
-      ref={ref}
-      style={{
-        transform: isInView ? "none" : "translateX(-200px)",
-        opacity: isInView ? 1 : 0,
-        transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
-      }}
-    >
+    <div className="feedback">
       <div className="feedback-header">
         <h2>Take a look at these feedbacks</h2>
         <p>

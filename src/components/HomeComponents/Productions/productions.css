@@ -27,6 +27,7 @@
 .productions {
   padding: 50px 7%;
   background-color: var(--primary-color);
+  transition: all ease-in-out 0.4s;
 }
 
 .productions .header {
