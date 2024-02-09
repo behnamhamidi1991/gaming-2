@@ -188,3 +188,82 @@ export const productions: ProductionInterface[] = [
     tags: ["Shooting", "Third-Person", "Mystory", "Action", "Puzzle"],
   },
 ];
+
+interface PriceInterface {
+  id: string;
+  title: string;
+  price: number;
+  offer: boolean;
+  offPrice: number;
+  percentage: string;
+  streaming: boolean;
+  forum: boolean;
+  vipGroup: boolean;
+  creatingServers: boolean;
+  numServers: number;
+  support: boolean;
+  vipCart: boolean;
+}
+
+export const prices: PriceInterface[] = [
+  {
+    id: "1",
+    title: "Basic",
+    price: 0,
+    offer: false,
+    offPrice: 0,
+    percentage: "",
+    streaming: false,
+    forum: true,
+    vipGroup: false,
+    creatingServers: false,
+    numServers: 0,
+    support: false,
+    vipCart: false,
+  },
+  {
+    id: "2",
+    title: "Standard",
+    price: 49,
+    offer: false,
+    offPrice: 0,
+    percentage: "",
+    streaming: false,
+    forum: true,
+    vipGroup: true,
+    creatingServers: true,
+    numServers: 5,
+    support: true,
+    vipCart: false,
+  },
+  {
+    id: "3",
+    title: "Professional",
+    price: 189,
+    offer: true,
+    offPrice: 151,
+    percentage: "20%",
+    streaming: true,
+    forum: true,
+    vipGroup: true,
+    creatingServers: true,
+    numServers: 10,
+    support: true,
+    vipCart: false,
+  },
+  {
+    id: "4",
+    title: "VIP",
+    price: 389,
+    offer: true,
+    offPrice: 233.4,
+    percentage: "40%",
+    streaming: true,
+    forum: true,
+    vipGroup: true,
+    creatingServers: true,
+    numServers: 30,
+    support: true,
+    vipCart: true,
+  },
+];

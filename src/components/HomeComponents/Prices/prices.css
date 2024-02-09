@@ -1,0 +1,122 @@
+:root {
+  --primary-color: #1f2428;
+  --secondary-color: #ececec;
+  --post-color: #2f353d;
+  --btn-color: rgb(78, 83, 88);
+  --btn1: #3c62df;
+  --btn2: #8000ff;
+  --btn3: #ff007b;
+}
+
+.price-section {
+  padding: 100px 7% 250px 7%;
+
+  background-color: var(--primary-color);
+}
+
+.price-header {
+  margin-bottom: 10px;
+}
+
+.price-header h2 {
+  font-weight: 300;
+  margin-bottom: 9px;
+  color: var(--secondary-color);
+}
+.price-header p {
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: var(--secondary-color);
+}
+
+.price-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  grid-gap: 27px;
+}
+
+.price-cart {
+  background-color: var(--post-color);
+  padding: 65px 25px;
+}
+
+.price-cart h3 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.true-icon {
+  font-size: 20px;
+  color: rgb(151, 212, 60);
+}
+.false-icon {
+  font-size: 20px;
+  color: tomato;
+}
+
+.pricebox {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(198, 198, 198);
+  margin-top: 10px;
+  padding-bottom: 8px;
+}
+
+.streaming-bool {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  border-bottom: 1px solid rgb(198, 198, 198);
+}
+
+.forum-bool {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  border-bottom: 1px solid rgb(198, 198, 198);
+}
+
+.vip-group-bool {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  border-bottom: 1px solid rgb(198, 198, 198);
+}
+
+.server-bool {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  border-bottom: 1px solid rgb(198, 198, 198);
+}
+
+.num-servers {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  border-bottom: 1px solid rgb(198, 198, 198);
+}
+
+.support-bool {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  border-bottom: 1px solid rgb(198, 198, 198);
+}
+
+.vip-cart-bool {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  border-bottom: 1px solid rgb(198, 198, 198);
+}
