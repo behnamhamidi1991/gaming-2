@@ -202,6 +202,12 @@ interface PriceInterface {
   creatingServers: boolean;
   numServers: number;
   support: boolean;
+  freedelivery: boolean;
+  meetings: boolean;
+  gamecenter: boolean;
+  discountPro: boolean;
+  vps: boolean;
+  freeaccount: boolean;
   vipCart: boolean;
 }
 
@@ -219,6 +225,12 @@ export const prices: PriceInterface[] = [
     creatingServers: false,
     numServers: 0,
     support: false,
+    freedelivery: false,
+    meetings: true,
+    gamecenter: false,
+    discountPro: false,
+    vps: false,
+    freeaccount: false,
     vipCart: false,
   },
   {
@@ -234,6 +246,12 @@ export const prices: PriceInterface[] = [
     creatingServers: true,
     numServers: 5,
     support: true,
+    freedelivery: false,
+    meetings: true,
+    gamecenter: false,
+    discountPro: true,
+    vps: false,
+    freeaccount: true,
     vipCart: false,
   },
   {
@@ -249,6 +267,12 @@ export const prices: PriceInterface[] = [
     creatingServers: true,
     numServers: 10,
     support: true,
+    freedelivery: false,
+    meetings: true,
+    gamecenter: false,
+    discountPro: true,
+    vps: true,
+    freeaccount: true,
     vipCart: false,
   },
   {
@@ -264,6 +288,12 @@ export const prices: PriceInterface[] = [
     creatingServers: true,
     numServers: 30,
     support: true,
+    freedelivery: true,
+    meetings: true,
+    gamecenter: true,
+    discountPro: true,
+    vps: true,
+    freeaccount: true,
     vipCart: true,
   },
 ];

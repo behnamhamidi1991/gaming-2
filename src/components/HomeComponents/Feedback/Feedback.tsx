@@ -10,6 +10,13 @@ import { FaStar } from "react-icons/fa";
 const Feedback = () => {
   return (
     <div className="feedback">
+      <div className="feedback-header">
+        <h2>Take a look at these feedbacks</h2>
+        <p>
+          If you are not familiar with us and our services, take a look at what
+          our amazing users are saying about us.
+        </p>
+      </div>
       <Swiper
         spaceBetween={30}
         centeredSlides={true}

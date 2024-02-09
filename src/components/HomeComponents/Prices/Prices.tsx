@@ -81,9 +81,70 @@ const Prices = () => {
                 </span>
               </div>
               <div className="vip-cart-bool">
-                <span>Game Servers:</span>
+                <span>VIP Cart:</span>
                 <span>
                   {cart.vipCart === true ? (
+                    <BiCheck className="true-icon" />
+                  ) : (
+                    <RxCross2 className="false-icon" />
+                  )}
+                </span>
+              </div>
+              {/* CLASS CHECK */}
+              <div className="vip-cart-bool">
+                <span>Free Delivery:</span>
+                <span>
+                  {cart.freedelivery === true ? (
+                    <BiCheck className="true-icon" />
+                  ) : (
+                    <RxCross2 className="false-icon" />
+                  )}
+                </span>
+              </div>
+              <div className="vip-cart-bool">
+                <span>Meetings:</span>
+                <span>
+                  {cart.meetings === true ? (
+                    <BiCheck className="true-icon" />
+                  ) : (
+                    <RxCross2 className="false-icon" />
+                  )}
+                </span>
+              </div>
+              <div className="vip-cart-bool">
+                <span>Game-Center:</span>
+                <span>
+                  {cart.gamecenter === true ? (
+                    <BiCheck className="true-icon" />
+                  ) : (
+                    <RxCross2 className="false-icon" />
+                  )}
+                </span>
+              </div>
+              <div className="vip-cart-bool">
+                <span>Production Discount:</span>
+                <span>
+                  {cart.discountPro === true ? (
+                    <BiCheck className="true-icon" />
+                  ) : (
+                    <RxCross2 className="false-icon" />
+                  )}
+                </span>
+              </div>
+              <div className="vip-cart-bool">
+                <span>VPS:</span>
+                <span>
+                  {cart.vps === true ? (
+                    <BiCheck className="true-icon" />
+                  ) : (
+                    <RxCross2 className="false-icon" />
+                  )}
+                </span>
+              </div>
+              <div className="vip-cart-bool">
+                <span>Free Account:</span>
+                <span>
+                  {cart.freeaccount === true ? (
                     <BiCheck className="true-icon" />
                   ) : (
                     <RxCross2 className="false-icon" />
