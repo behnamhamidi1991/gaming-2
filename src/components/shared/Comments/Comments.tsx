@@ -2,7 +2,7 @@ import "./comments.css";
 import { users } from "../../../userData";
 
 const Comments = () => {
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: any) => {
     e.preventDefault();
   };
 
