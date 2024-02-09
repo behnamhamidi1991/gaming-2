@@ -1,5 +1,17 @@
+:root {
+  --primary-color: #1f2428;
+  --secondary-color: #ececec;
+  --post-color: #2f353d;
+  --btn-color: rgb(78, 83, 88);
+  --btn1: #3c62df;
+  --btn2: #8000ff;
+  --btn3: #ff007b;
+}
+
 .dashboard {
-  padding: 80px 10%;
+  padding: 80px 10% 200px 10%;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .dashboard-top h2 {
@@ -16,4 +28,42 @@
 
 .dashboard-content .dashboard-content-right {
   flex: 1;
+}
+
+.dashboard-content-left {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(370px, auto));
+  grid-gap: 12px;
+  padding: 15px 20px;
+}
+
+.dashboard-item {
+  background-color: var(--post-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all ease-in-out 0.1s;
+}
+
+.dashboard-item:hover {
+  background-color: #656e78;
+  color: #fff;
+}
+
+.dashboard-item h4 {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 3px;
+}
+
+.dashboard-item p {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.dashboard-item-icon {
+  font-size: 48px;
+  margin-bottom: 10px;
 }

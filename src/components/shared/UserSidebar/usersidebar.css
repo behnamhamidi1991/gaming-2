@@ -1,0 +1,70 @@
+:root {
+  --primary-color: #1f2428;
+  --secondary-color: #ececec;
+  --post-color: #2f353d;
+  --btn-color: rgb(78, 83, 88);
+  --btn1: #3c62df;
+  --btn2: #8000ff;
+  --btn3: #ff007b;
+}
+
+.user-sidebar {
+  background-color: var(--post-color);
+  color: var(--secondary-color);
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-top h2 {
+  margin-bottom: 8px;
+}
+
+.user-sidebar-user-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-sidebar-user-box img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.user-sidebar-user-content p {
+  margin-top: 10px;
+  line-height: 1.4;
+  border-bottom: 1px solid gray;
+  font-size: 15px;
+}
+
+.user-sidebar-btn-container {
+  display: flex;
+  gap: 10px;
+}
+
+.user-sidebar-logout-btn {
+  margin-top: 15px;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 3px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+
+.user-sidebar-settings-btn {
+  margin-top: 15px;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 3px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  cursor: pointer;
+}
