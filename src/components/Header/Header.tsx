@@ -19,7 +19,7 @@ const Header = ({ darkTheme, theme }: any) => {
       window.removeEventListener("scroll", isSticky);
     };
   });
-  const isSticky = (e) => {
+  const isSticky = () => {
     const header = document.querySelector("header");
     const scrollTop = window.scrollY;
     scrollTop >= 300
