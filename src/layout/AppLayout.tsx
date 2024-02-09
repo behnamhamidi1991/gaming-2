@@ -4,7 +4,7 @@ import Footer from "../components/Footer/Footer";
 import { Outlet } from "react-router-dom";
 
 const AppLayout = () => {
-  const [darkTheme, setDarkTheme] = useState<boolean>(true);
+  const [darkTheme, setDarkTheme] = useState<boolean>(false);
   return (
     <div className={darkTheme ? "main dark" : "main light"}>
       <Header darkTheme={setDarkTheme} theme={darkTheme} />

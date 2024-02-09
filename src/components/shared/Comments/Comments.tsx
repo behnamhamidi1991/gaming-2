@@ -2,6 +2,10 @@ import "./comments.css";
 import { users } from "../../../userData";
 
 const Comments = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <div className="comments">
       <div className="comments-top">
@@ -11,7 +15,7 @@ const Comments = () => {
         </p>
       </div>
       <div className="comments-main">
-        <form>
+        <form onSubmit={handleSubmit}>
           <input type="text" placeholder="Enter your name ..." />
           <input type="email" placeholder="Enter your email ..." />
           <textarea placeholder="Write your comment here ..." />
