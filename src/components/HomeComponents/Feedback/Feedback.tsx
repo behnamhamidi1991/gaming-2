@@ -5,6 +5,8 @@ import "./feedback.css";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import { FaStar } from "react-icons/fa";
+
 const Feedback = () => {
   return (
     <div className="feedback">
@@ -25,25 +27,18 @@ const Feedback = () => {
               <div className="feedback-left">
                 <div className="user-image-container">
                   <img src={user.profileImage} alt="profile-image" />
+                  <div className="star-rating">
+                    <FaStar className="star-icon" />
+                    <FaStar className="star-icon" />
+                    <FaStar className="star-icon" />
+                    <FaStar className="star-icon" />
+                    <FaStar className="star-icon" />
+                  </div>
                   <p className="user-name">{user.name}</p>
                   <div className="feedback-content">
                     <p className="user-feedback">{user.feedback}</p>
                   </div>
                 </div>
-              </div>
-              <div className="feedback-right">
-                <h3>User Info</h3>
-                <p>Name: {user.name}</p>
-                <p>Level: {user.level}</p>
-                <p>Country: {user.country}</p>
-                <p>City: {user.city}</p>
-                <p>Awards: {user.awards}</p>
-                <p>Followers {user.followers}</p>
-                <p>Following {user.following}</p>
-                <p>Status: {user.isOnline === true ? "Onlioe" : "Offline"}</p>
-                <p>
-                  Account: {user.isPremium === true ? "Premium" : "Regular"}
-                </p>
               </div>
             </div>
           </SwiperSlide>

@@ -43,14 +43,7 @@
 }
 .feedback-left {
   flex: 2;
-  background-color: var(--post-color);
   padding: 35px 20px;
-}
-.feedback-right {
-  flex: 1;
-  background-color: var(--post-color);
-  padding: 35px 20px;
-  line-height: 1.7;
 }
 
 .feedback-content {
@@ -60,9 +53,20 @@
 
 .user-feedback {
   line-height: 1.9;
+  font-size: 20px;
+  font-weight: 300;
 }
 
-/* RIGHT */
+.star-rating {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+
+.star-icon {
+  color: gold;
+  font-size: 22px;
+}
 
 @media screen and (max-width: 1198px) {
   .user-feedback {
