@@ -26,6 +26,8 @@
   padding: 10px;
   border-radius: 3px;
   outline: none;
+  background-color: var(--post-color);
+  color: var(--secondary-color);
 }
 
 .comments-main form textarea {
@@ -34,6 +36,8 @@
   padding: 12px;
   height: 200px;
   outline: none;
+  background-color: var(--post-color);
+  color: var(--secondary-color);
 }
 
 .comments-main form button {
