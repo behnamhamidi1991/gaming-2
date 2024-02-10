@@ -28,6 +28,7 @@ const Comments = () => {
             <div key={user.id} className="user-single-comment-box">
               <div className="comments-user-image">
                 <img src={user.profileImage} alt="user-image" />
+                <p>{user.name}</p>
               </div>
               <div className="comments-user-content">
                 <p>{user.comment}</p>
