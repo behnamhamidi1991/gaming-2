@@ -5,8 +5,10 @@ import About from "./pages/About/About";
 import Cart from "./pages/Cart/Cart";
 import AppLayout from "./layout/AppLayout";
 import ErrorPage from "./pages/Errorpage/ErrorPage";
-import BlogPost from "./pages/SingleProduction/SingleProduction";
+import SingleProduction from "./pages/SingleProduction/SingleProduction";
 import Dashboard from "./pages/Dashboard/Dashboard";
+import Blog from "./pages/Blog/Blog";
+import BlogSinglePost from "./pages/Blog/BlogSinglePost.tsx/BlogSinglePost";
 
 const router = createBrowserRouter([
   {
@@ -32,7 +34,15 @@ const router = createBrowserRouter([
       },
       {
         path: "/license/:id",
-        element: <BlogPost />,
+        element: <SingleProduction />,
+      },
+      {
+        path: "/blog",
+        element: <Blog />,
+      },
+      {
+        path: "/blog/:id",
+        element: <BlogSinglePost />,
       },
     ],
   },
